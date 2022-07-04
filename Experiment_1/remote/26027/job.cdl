@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chronos>
+  <setup/>
+  <evaluation system="19">
+    <store>oltpbench-polypheny</store>
+    <numberOfThreads>1</numberOfThreads>
+    <pdbBranch>cypher-cleanup</pdbBranch>
+    <dataStore>postgres</dataStore>
+    <queryMode>Table</queryMode>
+    <routers>Simple_Icarus_FullPlacement</routers>
+    <newTablePlacementStrategy>Single</newTablePlacementStrategy>
+    <planSelectionStrategy>Best</planSelectionStrategy>
+    <preCostRatio>50</preCostRatio>
+    <postCostRatio>50</postCostRatio>
+    <scaleFactor>100</scaleFactor>
+    <memoryCatalog>false</memoryCatalog>
+    <warmupTime>60</warmupTime>
+    <scenario>ycsb</scenario>
+    <deployStoresUsingDocker>true</deployStoresUsingDocker>
+    <workloadMonitoring>false</workloadMonitoring>
+    <restartAfterLoadingData>false</restartAfterLoadingData>
+    <routingCache>true</routingCache>
+    <postCostAggregation>onWarmup</postCostAggregation>
+    <time>60</time>
+    <rate>unlimited</rate>
+    <serial>false</serial>
+    <readRecordWeight>20</readRecordWeight>
+    <insertRecordWeight>20</insertRecordWeight>
+    <scanRecordWeight>20</scanRecordWeight>
+    <updateRecordWeight>20</updateRecordWeight>
+    <deleteRecordWeight>20</deleteRecordWeight>
+    <readModifyWriteRecordWeight>0</readModifyWriteRecordWeight>
+    <weightPercentageBase>100</weightPercentageBase>
+    <run>2</run>
+  </evaluation>
+</chronos>
+
