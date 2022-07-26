@@ -1,0 +1,45 @@
+[0mCHRONOS > INFO : ChronosJob{id=42541, name=22.07.2022 - 11:03, system=62a898edf3e98, username=marco.vogt} has now the state RUNNING.
+ [0mCHRONOS > INFO : Executing PREPARE phase.
+ [0mWARN : Executing on node: Black03
+ [0mCONTROL > INFO : > Updating Polypheny-DB ...
+ [0mCONTROL > INFO : > Pulling Polypheny-DB repository ...
+ [0mCONTROL > INFO : > Pulling Polypheny-DB repository ... finished.
+ [0mCONTROL > INFO : > No changes to PDB repository and therefore no need to rebuild Polypheny-DB ...
+ [0mCONTROL > INFO : ********************************************************
+ [0mCONTROL > INFO :          Polypheny has successfully been built!
+ [0mCONTROL > INFO : ********************************************************
+ [0mCONTROL > INFO : > Starting Polypheny-DB
+ [0mCONTROL > INFO : > PID = 935472
+ [0mCONTROL > INFO : > ... done.
+ [0mCONTROL > INFO : Listening for transport dt_socket at address: 8000
+ [0mCONTROL > INFO : WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+ [0mCONTROL > INFO : [30m07:36:53.519 INFO [main]: InformationServer started.
+ [0mCONTROL > INFO : [m[30m07:36:54.062 INFO [main]: Making the catalog persistent.
+ [0mCONTROL > INFO : [m[30m07:36:54.063 INFO [main]: Resetting catalog on startup.
+ [0mCONTROL > INFO : [m[30m07:36:55.415 INFO [Thread-34]: HTTP Interface started and is listening on port 13137.
+ [0mCONTROL > INFO : [m[30m07:36:55.444 INFO [Thread-51]: REST Interface started and is listening on port 8089.
+ [0mCONTROL > INFO : [m[30m07:36:55.613 INFO [Thread-68]: AVATICA Interface started and is listening on port 20591.
+ [0mCONTROL > INFO : [m[30m07:36:55.658 INFO [main]: Resetting monitoring repository on startup.
+ [0mCONTROL > INFO : [m[30m07:36:56.296 INFO [Thread-79]: Polypheny-UI started and is listening on port 8080.
+ [0mCONTROL > INFO : [m[30m07:37:05.953 INFO [main]: ****************************************************************************************************
+ [0mCONTROL > INFO : [m[30m07:37:05.953 INFO [main]:                 Polypheny-DB successfully started and ready to process your queries!
+ [0mCONTROL > INFO : [m[30m07:37:05.954 INFO [main]:                               The UI is waiting for you on port 8080:
+ [0mCONTROL > INFO : [m[30m07:37:05.954 INFO [main]:                                        http://localhost:8080
+ [0mCONTROL > INFO : [m[30m07:37:05.954 INFO [main]: ****************************************************************************************************
+ [0mCONTROL > INFO : [m[33m07:37:57.236 WARN [HttpDispatcher-111]: Disabled post cost aggregation
+ [0mCONTROL > INFO : [m[33m07:38:05.695 WARN [HttpDispatcher-111]: Disabled workload monitoring
+ [0mCHRONOS > INFO : Executing WARM_UP phase.
+ [0mCONTROL > INFO : [m[33m07:48:40.112 WARN [HttpDispatcher-113]: Enabled workload monitoring
+ [0mCONTROL > INFO : [m[33m07:48:40.182 WARN [HttpDispatcher-111]: Enabled post cost aggregation
+ [0mCHRONOS > INFO : Executing EXECUTE phase.
+ [0mCONTROL > INFO : [m[33m07:55:08.016 WARN [HttpDispatcher-115]: Disabled post cost aggregation
+ [0mCONTROL > INFO : [m[33m07:55:08.127 WARN [HttpDispatcher-112]: Disabled workload monitoring
+ [0mCHRONOS > INFO : Executing ANALYZE phase.
+ [0mCHRONOS > INFO : Executing CLEAN phase.
+ [0mCONTROL > INFO : > Stopping Polypheny-DB ...
+ [0mCONTROL > INFO : > ... done.
+ [0mCHRONOS > INFO : Zipping results.
+ [0mCHRONOS > INFO : Uploading results for ChronosJob{id=42541, name=22.07.2022 - 11:03, system=62a898edf3e98, username=marco.vogt}
+ [0mCHRONOS > INFO : Storing output.zip as 42541.zip
+ [0mCHRONOS > INFO : ChronosJob{id=42541, name=22.07.2022 - 11:03, system=62a898edf3e98, username=marco.vogt} has now the state FINISHED.
+ 
