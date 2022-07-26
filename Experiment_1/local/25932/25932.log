@@ -1,0 +1,42 @@
+[0mCHRONOS > INFO : ChronosJob{id=25932, name=11.06.2022 - 23:07, system=629bd60f859af, username=marco.vogt} has now the state RUNNING.
+ [0mCHRONOS > INFO : Executing PREPARE phase.
+ [0mWARN : Executing on node: Black08
+ [0mWARN : OLTPBench> 
+ [0mWARN : OLTPBench> Benchmark:     YCSB {com.oltpbenchmark.benchmarks.ycsb.YCSBBenchmark}
+ [0mWARN : OLTPBench> Configuration: /home/ubuntu/.polypheny/client/ycsb.xml
+ [0mWARN : OLTPBench> Type:          POSTGRES
+ [0mWARN : OLTPBench> Driver:        org.postgresql.Driver
+ [0mWARN : OLTPBench> URL:           jdbc:postgresql://127.0.0.1:5432/test
+ [0mWARN : OLTPBench> Isolation:     TRANSACTION_SERIALIZABLE
+ [0mWARN : OLTPBench> Scale Factor:  1.0
+ [0mWARN : OLTPBench> 
+ [0mWARN : OLTPBench> 
+ [0mWARN : OLTPBench> Benchmark:     YCSB {com.oltpbenchmark.benchmarks.ycsb.YCSBBenchmark}
+ [0mWARN : OLTPBench> Configuration: /home/ubuntu/.polypheny/client/ycsb.xml
+ [0mWARN : OLTPBench> Type:          POSTGRES
+ [0mWARN : OLTPBench> Driver:        org.postgresql.Driver
+ [0mWARN : OLTPBench> URL:           jdbc:postgresql://127.0.0.1:5432/test
+ [0mWARN : OLTPBench> Isolation:     TRANSACTION_SERIALIZABLE
+ [0mWARN : OLTPBench> Scale Factor:  1.0
+ [0mWARN : OLTPBench> 
+ [0mCHRONOS > INFO : Skipping WARM_UP phase.
+ [0mCHRONOS > INFO : Executing EXECUTE phase.
+ [0mWARN : OLTPBench> 
+ [0mWARN : OLTPBench> Benchmark:     YCSB {com.oltpbenchmark.benchmarks.ycsb.YCSBBenchmark}
+ [0mWARN : OLTPBench> Configuration: /home/ubuntu/.polypheny/client/ycsb.xml
+ [0mWARN : OLTPBench> Type:          POSTGRES
+ [0mWARN : OLTPBench> Driver:        org.postgresql.Driver
+ [0mWARN : OLTPBench> URL:           jdbc:postgresql://127.0.0.1:5432/test
+ [0mWARN : OLTPBench> Isolation:     TRANSACTION_SERIALIZABLE
+ [0mWARN : OLTPBench> Scale Factor:  1.0
+ [0mWARN : OLTPBench> 
+ [0mWARN : OLTPBench> 21:53:56,068 (ThreadBench.java:341) INFO  - [0;1mPHASE START[0;0m :: [Workload=YCSB] [Serial=false] [Time=60] [WarmupTime=60] [Rate=unlimited] [Arrival=REGULAR] [Ratios=[20.0, 20.0, 20.0, 20.0, 20.0, 0.0]] [ActiveWorkers=1]
+ [0mWARN : OLTPBench> 21:54:56,069 (ThreadBench.java:492) INFO  - [0;1mMEASURE[0;0m :: Warmup complete, starting measurements.
+ [0mWARN : OLTPBench> 21:55:57,068 (ThreadBench.java:447) INFO  - [0;1mTERMINATE[0;0m :: Waiting for all terminals to finish ..
+ [0mCHRONOS > INFO : Executing ANALYZE phase.
+ [0mCHRONOS > INFO : Executing CLEAN phase.
+ [0mCHRONOS > INFO : Zipping results.
+ [0mCHRONOS > INFO : Uploading results for ChronosJob{id=25932, name=11.06.2022 - 23:07, system=629bd60f859af, username=marco.vogt}
+ [0mCHRONOS > INFO : Storing output.zip as 25932.zip
+ [0mCHRONOS > INFO : ChronosJob{id=25932, name=11.06.2022 - 23:07, system=629bd60f859af, username=marco.vogt} has now the state FINISHED.
+ 

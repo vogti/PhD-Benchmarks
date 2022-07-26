@@ -1,0 +1,72 @@
+[0mCHRONOS > INFO : ChronosJob{id=26019, name=11.06.2022 - 23:31, system=629bd60f859af, username=marco.vogt} has now the state RUNNING.
+ [0mCHRONOS > INFO : Executing PREPARE phase.
+ [0mWARN : Executing on node: Black10
+ [0mCONTROL > INFO : > Updating Polypheny-DB ...
+ [0mCONTROL > INFO : > Pulling Polypheny-DB repository ...
+ [0mCONTROL > INFO : > Pulling Polypheny-DB repository ... finished.
+ [0mCONTROL > INFO : > Building Polypheny-DB ...
+ [0mCONTROL > INFO : > Building Polypheny-DB ... finished.
+ [0mCONTROL > INFO : ********************************************************
+ [0mCONTROL > INFO :          Polypheny has successfully been built!
+ [0mCONTROL > INFO : ********************************************************
+ [0mCONTROL > INFO : > Starting Polypheny-DB
+ [0mCONTROL > INFO : > PID = 1335716
+ [0mCONTROL > INFO : > ... done.
+ [0mCONTROL > INFO : Listening for transport dt_socket at address: 8000
+ [0mCONTROL > INFO : WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+ [0mCONTROL > INFO : [30m21:40:07.988 INFO [main]: InformationServer started.
+ [0mCONTROL > INFO : [m[30m21:40:08.563 INFO [main]: Making the catalog persistent.
+ [0mCONTROL > INFO : [m[30m21:40:08.566 INFO [main]: Resetting catalog on startup.
+ [0mCONTROL > INFO : [m[30m21:40:09.565 INFO [Thread-34]: AVATICA Interface started and is listening on port 20591.
+ [0mCONTROL > INFO : [m[30m21:40:09.599 INFO [Thread-45]: REST Interface started and is listening on port 8089.
+ [0mCONTROL > INFO : [m[30m21:40:09.623 INFO [Thread-62]: HTTP Interface started and is listening on port 13137.
+ [0mCONTROL > INFO : [m[30m21:40:09.643 INFO [main]: Resetting monitoring repository on startup.
+ [0mCONTROL > INFO : [m[30m21:40:10.303 INFO [Thread-79]: Polypheny-UI started and is listening on port 8080.
+ [0mCONTROL > INFO : [m[30m21:40:13.318 INFO [main]: ****************************************************************************************************
+ [0mCONTROL > INFO : [m[30m21:40:13.318 INFO [main]:                 Polypheny-DB successfully started and ready to process your queries!
+ [0mCONTROL > INFO : [m[30m21:40:13.318 INFO [main]:                               The UI is waiting for you on port 8080:
+ [0mCONTROL > INFO : [m[30m21:40:13.318 INFO [main]:                                        http://localhost:8080
+ [0mCONTROL > INFO : [m[30m21:40:13.319 INFO [main]: ****************************************************************************************************
+ [0mWARN : OLTPBench> 
+ [0mWARN : OLTPBench> Benchmark:     YCSB {com.oltpbenchmark.benchmarks.ycsb.YCSBBenchmark}
+ [0mWARN : OLTPBench> Configuration: /home/ubuntu/.polypheny/client/ycsb.xml
+ [0mWARN : OLTPBench> Type:          POLYPHENY
+ [0mWARN : OLTPBench> Driver:        org.polypheny.jdbc.Driver
+ [0mWARN : OLTPBench> URL:           jdbc:polypheny://black11.maas/
+ [0mWARN : OLTPBench> Isolation:     TRANSACTION_SERIALIZABLE
+ [0mWARN : OLTPBench> Scale Factor:  100.0
+ [0mWARN : OLTPBench> 
+ [0mWARN : OLTPBench> 
+ [0mWARN : OLTPBench> Benchmark:     YCSB {com.oltpbenchmark.benchmarks.ycsb.YCSBBenchmark}
+ [0mWARN : OLTPBench> Configuration: /home/ubuntu/.polypheny/client/ycsb.xml
+ [0mWARN : OLTPBench> Type:          POLYPHENY
+ [0mWARN : OLTPBench> Driver:        org.polypheny.jdbc.Driver
+ [0mWARN : OLTPBench> URL:           jdbc:polypheny://black11.maas/
+ [0mWARN : OLTPBench> Isolation:     TRANSACTION_SERIALIZABLE
+ [0mWARN : OLTPBench> Scale Factor:  100.0
+ [0mWARN : OLTPBench> 
+ [0mCHRONOS > INFO : Skipping WARM_UP phase.
+ [0mCHRONOS > INFO : Executing EXECUTE phase.
+ [0mWARN : OLTPBench> 
+ [0mWARN : OLTPBench> Benchmark:     YCSB {com.oltpbenchmark.benchmarks.ycsb.YCSBBenchmark}
+ [0mWARN : OLTPBench> Configuration: /home/ubuntu/.polypheny/client/ycsb.xml
+ [0mWARN : OLTPBench> Type:          POLYPHENY
+ [0mWARN : OLTPBench> Driver:        org.polypheny.jdbc.Driver
+ [0mWARN : OLTPBench> URL:           jdbc:polypheny://black11.maas/
+ [0mWARN : OLTPBench> Isolation:     TRANSACTION_SERIALIZABLE
+ [0mWARN : OLTPBench> Scale Factor:  100.0
+ [0mWARN : OLTPBench> 
+ [0mWARN : OLTPBench> 21:50:17,484 (ThreadBench.java:341) INFO  - [0;1mPHASE START[0;0m :: [Workload=YCSB] [Serial=false] [Time=60] [WarmupTime=60] [Rate=unlimited] [Arrival=REGULAR] [Ratios=[20.0, 20.0, 20.0, 20.0, 20.0, 0.0]] [ActiveWorkers=1]
+ [0mCONTROL > INFO : [m[33m21:50:17.440 WARN [HttpDispatcher-151]: There is a running transaction associated with this connection org.polypheny.db.avatica.PolyphenyDbConnectionHandle@2646f8cc
+ [0mCONTROL > INFO : [m[33m21:50:17.441 WARN [HttpDispatcher-151]: Rollback transaction org.polypheny.db.transaction.TransactionImpl@d51461e8
+ [0mWARN : OLTPBench> 21:51:17,484 (ThreadBench.java:492) INFO  - [0;1mMEASURE[0;0m :: Warmup complete, starting measurements.
+ [0mWARN : OLTPBench> 21:52:17,484 (ThreadBench.java:447) INFO  - [0;1mTERMINATE[0;0m :: Waiting for all terminals to finish ..
+ [0mCHRONOS > INFO : Executing ANALYZE phase.
+ [0mCHRONOS > INFO : Executing CLEAN phase.
+ [0mCONTROL > INFO : > Stopping Polypheny-DB ...
+ [0mCONTROL > INFO : > ... done.
+ [0mCHRONOS > INFO : Zipping results.
+ [0mCHRONOS > INFO : Uploading results for ChronosJob{id=26019, name=11.06.2022 - 23:31, system=629bd60f859af, username=marco.vogt}
+ [0mCHRONOS > INFO : Storing output.zip as 26019.zip
+ [0mCHRONOS > INFO : ChronosJob{id=26019, name=11.06.2022 - 23:31, system=629bd60f859af, username=marco.vogt} has now the state FINISHED.
+ 
