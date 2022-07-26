@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chronos>
+  <setup/>
+  <evaluation system="21">
+    <store>polypheny</store>
+    <numberOfThreads>4</numberOfThreads>
+    <pdbBranch>cypher</pdbBranch>
+    <dataStore>neo4j_postgres_mongodb</dataStore>
+    <planAndImplementationCaching>Both</planAndImplementationCaching>
+    <queryMode>Table</queryMode>
+    <routers>Simple_Icarus_FullPlacement</routers>
+    <newTablePlacementStrategy>All</newTablePlacementStrategy>
+    <planSelectionStrategy>Best</planSelectionStrategy>
+    <preCostRatio>30</preCostRatio>
+    <postCostRatio>70</postCostRatio>
+    <router>icarus</router>
+    <readRatio>60</readRatio>
+    <writeRatio>40</writeRatio>
+    <memoryCatalog>false</memoryCatalog>
+    <numberOfWarmUpIterations>6</numberOfWarmUpIterations>
+    <deployStoresUsingDocker>true</deployStoresUsingDocker>
+    <scenario>multibench</scenario>
+    <restartAfterLoadingData>false</restartAfterLoadingData>
+    <routingCache>true</routingCache>
+    <postCostAggregation>onWarmup</postCostAggregation>
+    <seed>13375871</seed>
+    <batchSize>50</batchSize>
+    <workloadMonitoring>false</workloadMonitoring>
+    <workloadMonitoringLoadingData>false</workloadMonitoringLoadingData>
+    <workloadMonitoringWarmup>true</workloadMonitoringWarmup>
+    <totalNumberOfQueries>2200</totalNumberOfQueries>
+    <numberOfDocBenchQueries>154</numberOfDocBenchQueries>
+    <numberOfGraphBenchQueries>990</numberOfGraphBenchQueries>
+    <numberOfKnnBenchQueries>0</numberOfKnnBenchQueries>
+    <numberOfGavelQueries>1056</numberOfGavelQueries>
+    <run>8</run>
+  </evaluation>
+</chronos>
+
