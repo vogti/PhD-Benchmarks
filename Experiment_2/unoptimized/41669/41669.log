@@ -1,0 +1,92 @@
+[0mCHRONOS > INFO : ChronosJob{id=41669, name=22.07.2022 - 11:03, system=62a898edf3e98, username=marco.vogt} has now the state RUNNING.
+ [0mCHRONOS > INFO : Executing PREPARE phase.
+ [0mWARN : Executing on node: Black07
+ [0mCONTROL > INFO : > Updating Polypheny-DB ...
+ [0mCONTROL > INFO : > Pulling Polypheny-DB repository ...
+ [0mCONTROL > INFO : > Pulling Polypheny-DB repository ... finished.
+ [0mCONTROL > INFO : > No changes to PDB repository and therefore no need to rebuild Polypheny-DB ...
+ [0mCONTROL > INFO : ********************************************************
+ [0mCONTROL > INFO :          Polypheny has successfully been built!
+ [0mCONTROL > INFO : ********************************************************
+ [0mCONTROL > INFO : > Starting Polypheny-DB
+ [0mCONTROL > INFO : > PID = 4166823
+ [0mCONTROL > INFO : > ... done.
+ [0mCONTROL > INFO : Listening for transport dt_socket at address: 8000
+ [0mCONTROL > INFO : WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+ [0mCONTROL > INFO : [30m19:36:14.875 INFO [main]: InformationServer started.
+ [0mCONTROL > INFO : [m[30m19:36:15.457 INFO [main]: Making the catalog persistent.
+ [0mCONTROL > INFO : [m[30m19:36:15.457 INFO [main]: Resetting catalog on startup.
+ [0mCONTROL > INFO : [m[30m19:36:16.754 INFO [Thread-34]: HTTP Interface started and is listening on port 13137.
+ [0mCONTROL > INFO : [m[30m19:36:16.782 INFO [Thread-51]: REST Interface started and is listening on port 8089.
+ [0mCONTROL > INFO : [m[30m19:36:16.953 INFO [Thread-68]: AVATICA Interface started and is listening on port 20591.
+ [0mCONTROL > INFO : [m[30m19:36:17.004 INFO [main]: Resetting monitoring repository on startup.
+ [0mCONTROL > INFO : [m[30m19:36:17.606 INFO [Thread-79]: Polypheny-UI started and is listening on port 8080.
+ [0mCONTROL > INFO : [m[30m19:36:27.512 INFO [main]: ****************************************************************************************************
+ [0mCONTROL > INFO : [m[30m19:36:27.512 INFO [main]:                 Polypheny-DB successfully started and ready to process your queries!
+ [0mCONTROL > INFO : [m[30m19:36:27.512 INFO [main]:                               The UI is waiting for you on port 8080:
+ [0mCONTROL > INFO : [m[30m19:36:27.512 INFO [main]:                                        http://localhost:8080
+ [0mCONTROL > INFO : [m[30m19:36:27.512 INFO [main]: ****************************************************************************************************
+ [0mCONTROL > INFO : [m[33m19:37:15.683 WARN [HttpDispatcher-111]: Disabled post cost aggregation
+ [0mCONTROL > INFO : [m[33m19:37:27.716 WARN [HttpDispatcher-317]: Disabled workload monitoring
+ [0mCHRONOS > WARN : Exception while setting progress. This attempt will not be repeated by the library.
+ kong.unirest.UnirestException: org.apache.http.NoHttpResponseException: chronos.dmi.unibas.ch:443 failed to respond
+	at kong.unirest.DefaultInterceptor.onFail(DefaultInterceptor.java:43)
+	at kong.unirest.CompoundInterceptor.lambda$onFail$2(CompoundInterceptor.java:54)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Collections$2.tryAdvance(Collections.java:4853)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at kong.unirest.CompoundInterceptor.onFail(CompoundInterceptor.java:56)
+	at kong.unirest.apache.ApacheClient.request(ApacheClient.java:138)
+	at kong.unirest.Client.request(Client.java:57)
+	at kong.unirest.BaseRequest.request(BaseRequest.java:359)
+	at kong.unirest.BaseRequest.asJson(BaseRequest.java:244)
+	at ch.unibas.dmi.dbis.chronos.agent.ChronosHttpClient.setProgress(ChronosHttpClient.java:368)
+	at ch.unibas.dmi.dbis.chronos.agent.AbstractChronosAgent.setProgress(AbstractChronosAgent.java:594)
+	at ch.unibas.dmi.dbis.chronos.agent.AbstractChronosAgent.setProgress(AbstractChronosAgent.java:585)
+	at org.polypheny.simpleclient.main.ChronosAgent.updateProgress(ChronosAgent.java:533)
+	at org.polypheny.simpleclient.main.ChronosProgressReporter.update(ChronosProgressReporter.java:48)
+	at org.polypheny.simpleclient.main.ProgressReporter.updateProgress(ProgressReporter.java:50)
+	at org.polypheny.simpleclient.scenario.docbench.DataGenerator.generateData(DataGenerator.java:106)
+	at org.polypheny.simpleclient.scenario.docbench.DocBench.generateData(DocBench.java:127)
+	at org.polypheny.simpleclient.scenario.multibench.MultiBench.generateData(MultiBench.java:129)
+	at org.polypheny.simpleclient.main.ChronosAgent.prepare(ChronosAgent.java:342)
+	at ch.unibas.dmi.dbis.chronos.agent.AbstractChronosAgent.executePhases(AbstractChronosAgent.java:366)
+	at ch.unibas.dmi.dbis.chronos.agent.AbstractChronosAgent.run(AbstractChronosAgent.java:229)
+Caused by: org.apache.http.NoHttpResponseException: chronos.dmi.unibas.ch:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at kong.unirest.apache.ApacheClient.request(ApacheClient.java:129)
+	... 15 more
+[0mCHRONOS > INFO : Executing WARM_UP phase.
+ [0mCONTROL > INFO : [m[33m20:19:28.178 WARN [HttpDispatcher-119]: Enabled workload monitoring
+ [0mCONTROL > INFO : [m[33m20:19:28.246 WARN [HttpDispatcher-317]: Enabled post cost aggregation
+ [0mCHRONOS > INFO : Executing EXECUTE phase.
+ [0mCONTROL > INFO : [m[33m20:30:21.906 WARN [HttpDispatcher-115]: Disabled post cost aggregation
+ [0mCONTROL > INFO : [m[33m20:30:22.018 WARN [HttpDispatcher-111]: Disabled workload monitoring
+ [0mCHRONOS > INFO : Executing ANALYZE phase.
+ [0mCHRONOS > INFO : Executing CLEAN phase.
+ [0mCONTROL > INFO : > Stopping Polypheny-DB ...
+ [0mCONTROL > INFO : > ... done.
+ [0mCHRONOS > INFO : Zipping results.
+ [0mCHRONOS > INFO : Uploading results for ChronosJob{id=41669, name=22.07.2022 - 11:03, system=62a898edf3e98, username=marco.vogt}
+ [0mCHRONOS > INFO : Storing output.zip as 41669.zip
+ [0mCHRONOS > INFO : ChronosJob{id=41669, name=22.07.2022 - 11:03, system=62a898edf3e98, username=marco.vogt} has now the state FINISHED.
+ 

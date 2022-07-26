@@ -1,0 +1,51 @@
+[0mCHRONOS > INFO : ChronosJob{id=41263, name=22.07.2022 - 11:03, system=62a898edf3e98, username=marco.vogt} has now the state RUNNING.
+ [0mCHRONOS > INFO : Executing PREPARE phase.
+ [0mWARN : Executing on node: Black04
+ [0mCONTROL > INFO : > Deleting build folder ...
+ [0mCONTROL > INFO : > Deleting build folder ... Done.
+ [0mCONTROL > INFO : > Updating Polypheny-DB ...
+ [0mCONTROL > INFO : > Cloning Polypheny-DB repository ...
+ [0mCONTROL > INFO : > Cloning Polypheny-DB repository ... finished.
+ [0mCONTROL > INFO : > Pulling Polypheny-DB repository ...
+ [0mCONTROL > INFO : > Pulling Polypheny-DB repository ... finished.
+ [0mCONTROL > INFO : > Building Polypheny-DB ...
+ [0mCONTROL > INFO : > Building Polypheny-DB ... finished.
+ [0mCONTROL > INFO : ********************************************************
+ [0mCONTROL > INFO :          Polypheny has successfully been built!
+ [0mCONTROL > INFO : ********************************************************
+ [0mCONTROL > INFO : > Starting Polypheny-DB
+ [0mCONTROL > INFO : > PID = 3575022
+ [0mCONTROL > INFO : > ... done.
+ [0mCONTROL > INFO : Listening for transport dt_socket at address: 8000
+ [0mCONTROL > INFO : WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+ [0mCONTROL > INFO : [30m09:10:55.392 INFO [main]: InformationServer started.
+ [0mCONTROL > INFO : [m[30m09:10:55.981 INFO [main]: Making the catalog persistent.
+ [0mCONTROL > INFO : [m[30m09:10:55.982 INFO [main]: Resetting catalog on startup.
+ [0mCONTROL > INFO : [m[30m09:10:57.285 INFO [Thread-34]: HTTP Interface started and is listening on port 13137.
+ [0mCONTROL > INFO : [m[30m09:10:57.316 INFO [Thread-51]: REST Interface started and is listening on port 8089.
+ [0mCONTROL > INFO : [m[30m09:10:57.492 INFO [Thread-68]: AVATICA Interface started and is listening on port 20591.
+ [0mCONTROL > INFO : [m[30m09:10:57.547 INFO [main]: Resetting monitoring repository on startup.
+ [0mCONTROL > INFO : [m[30m09:10:58.184 INFO [Thread-79]: Polypheny-UI started and is listening on port 8080.
+ [0mCONTROL > INFO : [m[33m09:11:13.212 WARN [main]: Error while removing old docker container.
+ [0mCONTROL > INFO : [m[30m09:11:13.215 INFO [main]: ****************************************************************************************************
+ [0mCONTROL > INFO : [m[30m09:11:13.215 INFO [main]:                 Polypheny-DB successfully started and ready to process your queries!
+ [0mCONTROL > INFO : [m[30m09:11:13.216 INFO [main]:                               The UI is waiting for you on port 8080:
+ [0mCONTROL > INFO : [m[30m09:11:13.216 INFO [main]:                                        http://localhost:8080
+ [0mCONTROL > INFO : [m[30m09:11:13.216 INFO [main]: ****************************************************************************************************
+ [0mCONTROL > INFO : [m[33m09:11:23.166 WARN [HttpDispatcher-111]: Disabled post cost aggregation
+ [0mCONTROL > INFO : [m[33m09:11:33.436 WARN [HttpDispatcher-111]: Disabled workload monitoring
+ [0mCHRONOS > INFO : Executing WARM_UP phase.
+ [0mCONTROL > INFO : [m[33m09:17:42.428 WARN [HttpDispatcher-145]: Enabled workload monitoring
+ [0mCONTROL > INFO : [m[33m09:17:42.497 WARN [HttpDispatcher-112]: Enabled post cost aggregation
+ [0mCHRONOS > INFO : Executing EXECUTE phase.
+ [0mCONTROL > INFO : [m[33m09:23:52.477 WARN [HttpDispatcher-110]: Disabled post cost aggregation
+ [0mCONTROL > INFO : [m[33m09:23:52.591 WARN [HttpDispatcher-181]: Disabled workload monitoring
+ [0mCHRONOS > INFO : Executing ANALYZE phase.
+ [0mCHRONOS > INFO : Executing CLEAN phase.
+ [0mCONTROL > INFO : > Stopping Polypheny-DB ...
+ [0mCONTROL > INFO : > ... done.
+ [0mCHRONOS > INFO : Zipping results.
+ [0mCHRONOS > INFO : Uploading results for ChronosJob{id=41263, name=22.07.2022 - 11:03, system=62a898edf3e98, username=marco.vogt}
+ [0mCHRONOS > INFO : Storing output.zip as 41263.zip
+ [0mCHRONOS > INFO : ChronosJob{id=41263, name=22.07.2022 - 11:03, system=62a898edf3e98, username=marco.vogt} has now the state FINISHED.
+ 
