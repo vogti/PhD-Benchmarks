@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><parameters>
+    <dbtype>POLYPHENY</dbtype>
+    <driver>org.polypheny.jdbc.Driver</driver>
+    <DBUrl>jdbc:polypheny://127.0.0.1/</DBUrl>
+    <username>pa</username>
+    <password/>
+    <ddlFileName>tpcc-polypheny-ddl.sql</ddlFileName>
+    <isolation>TRANSACTION_SERIALIZABLE</isolation>
+    <batchsize>128</batchsize>
+    <scalefactor>1</scalefactor>
+    <terminals>1</terminals>
+    <works>
+        <work>
+            <time>1200</time>
+            <rate>unlimited</rate>
+            <warmup>300</warmup>
+            <weights>45,43,4,4,4</weights>
+        </work>
+    </works>
+    <transactiontypes>
+        <transactiontype>
+            <name>NewOrder</name>
+        </transactiontype>
+        <transactiontype>
+            <name>Payment</name>
+        </transactiontype>
+        <transactiontype>
+            <name>OrderStatus</name>
+        </transactiontype>
+        <transactiontype>
+            <name>Delivery</name>
+        </transactiontype>
+        <transactiontype>
+            <name>StockLevel</name>
+        </transactiontype>
+    </transactiontypes>
+</parameters>

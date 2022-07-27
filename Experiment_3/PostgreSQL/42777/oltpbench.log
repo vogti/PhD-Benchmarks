@@ -1,0 +1,29 @@
+14:41:08,374 (BenchmarkModule.java:201) DEBUG - Found DDL file for HSQLDB: jar:file:/home/ubuntu/.polypheny/client/oltpbench/lib/oltpbench-polypheny-1.2.1.jar!/com/oltpbenchmark/benchmarks/tpcc/ddls/tpcc-ddl.sql
+14:41:08,382 (BenchmarkModule.java:201) DEBUG - Found DDL file for HSQLDB: jar:file:/home/ubuntu/.polypheny/client/oltpbench/lib/oltpbench-polypheny-1.2.1.jar!/com/oltpbenchmark/benchmarks/tpcc/ddls/tpcc-ddl.sql
+14:41:08,386 (BenchmarkModule.java:299) DEBUG - Executing script 'jar:file:/home/ubuntu/.polypheny/client/oltpbench/lib/oltpbench-polypheny-1.2.1.jar!/com/oltpbenchmark/benchmarks/tpcc/ddls/tpcc-ddl.sql'
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/home/ubuntu/.polypheny/client/oltpbench/lib/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+14:41:08,805 (DBWorkload.java:270) INFO  - ======================================================================
+
+Benchmark:     TPCC {com.oltpbenchmark.benchmarks.tpcc.TPCCBenchmark}
+Configuration: /home/ubuntu/.polypheny/client/tpcc.xml
+Type:          POLYPHENY
+Driver:        org.polypheny.jdbc.Driver
+URL:           jdbc:polypheny://127.0.0.1/
+Isolation:     TRANSACTION_SERIALIZABLE
+Scale Factor:  1.0
+
+14:41:08,806 (DBWorkload.java:271) INFO  - ======================================================================
+14:41:08,819 (DBWorkload.java:849) INFO  - Creating 1 virtual terminals...
+14:41:09,142 (DBWorkload.java:854) INFO  - Launching the TPCC Benchmark with 1 Phase...
+14:41:09,149 (ThreadBench.java:341) INFO  - [0;1mPHASE START[0;0m :: [Workload=TPCC] [Serial=false] [Time=1200] [WarmupTime=300] [Rate=unlimited] [Arrival=REGULAR] [Ratios=[45.0, 43.0, 4.0, 4.0, 4.0]] [ActiveWorkers=1]
+14:46:09,148 (ThreadBench.java:492) INFO  - [0;1mMEASURE[0;0m :: Warmup complete, starting measurements.
+15:06:09,149 (ThreadBench.java:447) INFO  - [0;1mTERMINATE[0;0m :: Waiting for all terminals to finish ..
+15:06:11,127 (ThreadBench.java:508) INFO  - Attempting to stop worker threads and collect measurements
+15:06:11,129 (ThreadBench.java:247) INFO  - Starting WatchDogThread
+15:06:11,138 (DBWorkload.java:860) INFO  - ======================================================================
+15:06:11,139 (DBWorkload.java:861) INFO  - Rate limited reqs/s: Results(nanoSeconds=1200000419606, measuredRequests=892) = 0.7433330734108187 requests/sec
+15:06:11,140 (DBWorkload.java:700) INFO  - Output Raw data into file: results/oltpbench.csv
