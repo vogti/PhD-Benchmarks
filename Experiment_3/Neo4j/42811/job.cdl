@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chronos>
+  <setup/>
+  <evaluation system="17">
+    <store>oltpbench-polypheny</store>
+    <numberOfThreads>1</numberOfThreads>
+    <pdbBranch>cypher</pdbBranch>
+    <dataStore>neo4j_neo4j_neo4j</dataStore>
+    <queryMode>Table</queryMode>
+    <routers>Simple_Icarus_FullPlacement</routers>
+    <newTablePlacementStrategy>Single</newTablePlacementStrategy>
+    <planSelectionStrategy>Best</planSelectionStrategy>
+    <preCostRatio>50</preCostRatio>
+    <postCostRatio>50</postCostRatio>
+    <scaleFactor>1</scaleFactor>
+    <partitionItemTable>true</partitionItemTable>
+    <memoryCatalog>false</memoryCatalog>
+    <warmupTime>300</warmupTime>
+    <scenario>tpcc</scenario>
+    <deployStoresUsingDocker>true</deployStoresUsingDocker>
+    <workloadMonitoring>false</workloadMonitoring>
+    <workloadMonitoringLoadingData>false</workloadMonitoringLoadingData>
+    <workloadMonitoringWarmup>true</workloadMonitoringWarmup>
+    <restartAfterLoadingData>false</restartAfterLoadingData>
+    <routingCache>true</routingCache>
+    <postCostAggregation>onWarmup</postCostAggregation>
+    <time>1200</time>
+    <rate>unlimited</rate>
+    <newOrderWeight>45</newOrderWeight>
+    <paymentWeight>43</paymentWeight>
+    <orderStatusWeight>4</orderStatusWeight>
+    <deliveryWeight>4</deliveryWeight>
+    <stockLevelWeight>4</stockLevelWeight>
+    <weightPercentageBase>100</weightPercentageBase>
+    <run>14</run>
+  </evaluation>
+</chronos>
+

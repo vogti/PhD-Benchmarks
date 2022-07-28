@@ -1,0 +1,88 @@
+[0mCHRONOS > INFO : ChronosJob{id=42840, name=26.07.2022 - 20:03, system=629bcd5d5b1ad, username=marco.vogt} has now the state RUNNING.
+ [0mCHRONOS > INFO : Executing PREPARE phase.
+ [0mWARN : The job definition does not contain a value for 'planAndImplementationCaching' using default value 'Both' instead!
+ [0mWARN : Executing on node: Black08
+ [0mCONTROL > INFO : > Updating Polypheny-DB ...
+ [0mCONTROL > INFO : > Pulling Polypheny-DB repository ...
+ [0mCONTROL > INFO : > Pulling Polypheny-DB repository ... finished.
+ [0mCONTROL > INFO : > No changes to PDB repository and therefore no need to rebuild Polypheny-DB ...
+ [0mCONTROL > INFO : ********************************************************
+ [0mCONTROL > INFO :          Polypheny has successfully been built!
+ [0mCONTROL > INFO : ********************************************************
+ [0mCONTROL > INFO : > Starting Polypheny-DB
+ [0mCONTROL > INFO : > PID = 1706387
+ [0mCONTROL > INFO : > ... done.
+ [0mCONTROL > INFO : Listening for transport dt_socket at address: 8000
+ [0mCONTROL > INFO : WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+ [0mCONTROL > INFO : [30m22:49:14.382 INFO [main]: InformationServer started.
+ [0mCONTROL > INFO : [m[30m22:49:14.939 INFO [main]: Making the catalog persistent.
+ [0mCONTROL > INFO : [m[30m22:49:14.940 INFO [main]: Resetting catalog on startup.
+ [0mCONTROL > INFO : [m[30m22:49:16.304 INFO [Thread-34]: HTTP Interface started and is listening on port 13137.
+ [0mCONTROL > INFO : [m[30m22:49:16.333 INFO [Thread-51]: REST Interface started and is listening on port 8089.
+ [0mCONTROL > INFO : [m[30m22:49:16.502 INFO [Thread-68]: AVATICA Interface started and is listening on port 20591.
+ [0mCONTROL > INFO : [m[30m22:49:16.557 INFO [main]: Resetting monitoring repository on startup.
+ [0mCONTROL > INFO : [m[30m22:49:17.529 INFO [Thread-79]: Polypheny-UI started and is listening on port 8080.
+ [0mCONTROL > INFO : [m[30m22:49:27.507 INFO [main]: ****************************************************************************************************
+ [0mCONTROL > INFO : [m[30m22:49:27.508 INFO [main]:                 Polypheny-DB successfully started and ready to process your queries!
+ [0mCONTROL > INFO : [m[30m22:49:27.508 INFO [main]:                               The UI is waiting for you on port 8080:
+ [0mCONTROL > INFO : [m[30m22:49:27.508 INFO [main]:                                        http://localhost:8080
+ [0mCONTROL > INFO : [m[30m22:49:27.508 INFO [main]: ****************************************************************************************************
+ [0mCONTROL > INFO : [m[33m22:50:02.273 WARN [HttpDispatcher-119]: Disabled post cost aggregation
+ [0mINFO : OLTPBench> 
+ [0mINFO : OLTPBench> Benchmark:     TPCC {com.oltpbenchmark.benchmarks.tpcc.TPCCBenchmark}
+ [0mINFO : OLTPBench> Configuration: /home/ubuntu/.polypheny/client/tpcc.xml
+ [0mINFO : OLTPBench> Type:          POLYPHENY
+ [0mINFO : OLTPBench> Driver:        org.polypheny.jdbc.Driver
+ [0mINFO : OLTPBench> URL:           jdbc:polypheny://127.0.0.1/
+ [0mINFO : OLTPBench> Isolation:     TRANSACTION_SERIALIZABLE
+ [0mINFO : OLTPBench> Scale Factor:  1.0
+ [0mINFO : OLTPBench> 
+ [0mCONTROL > INFO : [m[33m22:50:21.208 WARN [HttpDispatcher-114]: Disabled workload monitoring
+ [0mINFO : OLTPBench> 
+ [0mINFO : OLTPBench> Benchmark:     TPCC {com.oltpbenchmark.benchmarks.tpcc.TPCCBenchmark}
+ [0mINFO : OLTPBench> Configuration: /home/ubuntu/.polypheny/client/tpcc.xml
+ [0mINFO : OLTPBench> Type:          POLYPHENY
+ [0mINFO : OLTPBench> Driver:        org.polypheny.jdbc.Driver
+ [0mINFO : OLTPBench> URL:           jdbc:polypheny://127.0.0.1/
+ [0mINFO : OLTPBench> Isolation:     TRANSACTION_SERIALIZABLE
+ [0mINFO : OLTPBench> Scale Factor:  1.0
+ [0mINFO : OLTPBench> 
+ [0mCHRONOS > INFO : Executing WARM_UP phase.
+ [0mCONTROL > INFO : [m[33m23:00:53.985 WARN [HttpDispatcher-113]: Enabled workload monitoring
+ [0mCONTROL > INFO : [m[33m23:00:54.056 WARN [HttpDispatcher-119]: Enabled post cost aggregation
+ [0mINFO : OLTPBench> 
+ [0mINFO : OLTPBench> Benchmark:     TPCC {com.oltpbenchmark.benchmarks.tpcc.TPCCBenchmark}
+ [0mINFO : OLTPBench> Configuration: /home/ubuntu/.polypheny/client/tpcc.xml
+ [0mINFO : OLTPBench> Type:          POLYPHENY
+ [0mINFO : OLTPBench> Driver:        org.polypheny.jdbc.Driver
+ [0mINFO : OLTPBench> URL:           jdbc:polypheny://127.0.0.1/
+ [0mINFO : OLTPBench> Isolation:     TRANSACTION_SERIALIZABLE
+ [0mINFO : OLTPBench> Scale Factor:  1.0
+ [0mINFO : OLTPBench> 
+ [0mINFO : OLTPBench> 23:02:55,852 (ThreadBench.java:341) INFO  - [0;1mPHASE START[0;0m :: [Workload=TPCC] [Serial=false] [Time=1200] [WarmupTime=300] [Rate=unlimited] [Arrival=REGULAR] [Ratios=[45.0, 43.0, 4.0, 4.0, 4.0]] [ActiveWorkers=1]
+ [0mINFO : OLTPBench> 23:07:55,853 (ThreadBench.java:492) INFO  - [0;1mMEASURE[0;0m :: Warmup complete, starting measurements.
+ [0mINFO : OLTPBench> 23:27:56,852 (ThreadBench.java:447) INFO  - [0;1mTERMINATE[0;0m :: Waiting for all terminals to finish ..
+ [0mCHRONOS > INFO : Executing EXECUTE phase.
+ [0mCONTROL > INFO : [m[33m23:29:00.646 WARN [HttpDispatcher-146]: Disabled post cost aggregation
+ [0mCONTROL > INFO : [m[33m23:29:00.766 WARN [HttpDispatcher-401]: Disabled workload monitoring
+ [0mINFO : OLTPBench> 
+ [0mINFO : OLTPBench> Benchmark:     TPCC {com.oltpbenchmark.benchmarks.tpcc.TPCCBenchmark}
+ [0mINFO : OLTPBench> Configuration: /home/ubuntu/.polypheny/client/tpcc.xml
+ [0mINFO : OLTPBench> Type:          POLYPHENY
+ [0mINFO : OLTPBench> Driver:        org.polypheny.jdbc.Driver
+ [0mINFO : OLTPBench> URL:           jdbc:polypheny://127.0.0.1/
+ [0mINFO : OLTPBench> Isolation:     TRANSACTION_SERIALIZABLE
+ [0mINFO : OLTPBench> Scale Factor:  1.0
+ [0mINFO : OLTPBench> 
+ [0mINFO : OLTPBench> 23:29:02,711 (ThreadBench.java:341) INFO  - [0;1mPHASE START[0;0m :: [Workload=TPCC] [Serial=false] [Time=1200] [WarmupTime=300] [Rate=unlimited] [Arrival=REGULAR] [Ratios=[45.0, 43.0, 4.0, 4.0, 4.0]] [ActiveWorkers=1]
+ [0mINFO : OLTPBench> 23:34:02,712 (ThreadBench.java:492) INFO  - [0;1mMEASURE[0;0m :: Warmup complete, starting measurements.
+ [0mINFO : OLTPBench> 23:54:03,711 (ThreadBench.java:447) INFO  - [0;1mTERMINATE[0;0m :: Waiting for all terminals to finish ..
+ [0mCHRONOS > INFO : Executing ANALYZE phase.
+ [0mCHRONOS > INFO : Executing CLEAN phase.
+ [0mCONTROL > INFO : > Stopping Polypheny-DB ...
+ [0mCONTROL > INFO : > ... done.
+ [0mCHRONOS > INFO : Zipping results.
+ [0mCHRONOS > INFO : Uploading results for ChronosJob{id=42840, name=26.07.2022 - 20:03, system=629bcd5d5b1ad, username=marco.vogt}
+ [0mCHRONOS > INFO : Storing output.zip as 42840.zip
+ [0mCHRONOS > INFO : ChronosJob{id=42840, name=26.07.2022 - 20:03, system=629bcd5d5b1ad, username=marco.vogt} has now the state FINISHED.
+ 
